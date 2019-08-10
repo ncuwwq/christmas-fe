@@ -1,0 +1,9 @@
+export const ADD_MY_TASK = 'home/ADD_MY_TASK';
+export const GET_INFO = 'home/GET_INFO';
+export const TO_DO_WORK= 'home/TO_DO_WORK';
+export const START_CHAT= 'home/START_CHAT';
+export const QUIT_CHAT= 'home/QUIT_CHAT';
+export const CHAT_TO_ROLE= 'home/CHAT_TO_ROLE';
+export const GET_PLAN= 'home/GET_PLAN';
+export const SAVE_OFF_MSG= 'home/SAVE_OFF_MSG';
+export const GET_ANGEL_NAME= 'home/GET_ANGEL_NAME';

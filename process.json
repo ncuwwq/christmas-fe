@@ -1,0 +1,27 @@
+{
+    "apps" : [{
+      "name": "server",
+      "script": "src/server/index.js",
+      "cwd": "./",
+      "exec_mode": "cluster",
+      "instances": 4,
+      "ignore_watch": ["node_modules"],
+      "error_file": "./logs/sever-err.log",
+      "out_file": "./logs/server-out.log",
+      "merge_logs": true,
+      "log_date_format": "YYYY-MM-DD HH:mm:ss",
+      "autorestart": true
+
+    },{
+      "name": "react",
+      "script": "scripts/start.js",
+      "instances": 4,
+      "exec_mode": "cluster",
+      "cwd": "./",
+      "ignore_watch": ["node_modules"],
+      "error_file": "./logs/react-err.log",
+      "out_file": "./logs/react-out.log",
+      "merge_logs": true,
+      "log_date_format": "YYYY-MM-DD HH:mm:ss",
+      "autorestart": true
+    }]}
